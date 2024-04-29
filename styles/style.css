@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
 }
 
 h1,
@@ -35,4 +36,123 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute; /* элемент вырывают из потока */
+  width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+  height: 1px;
+  margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+  padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+  border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+  clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения, устарело, следует использовать только для поддержки старых браузеров */
+  clip-path: inset(50%); /* замена clip, превращает элемент в невидимую глазу точку */
+  overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+}
+
+.content {
+  padding: 0 30px;
+  block-size: 534px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.result__video-container {
+  block-size: 386px;
+}
+
+.result__video {
+  height: 386px;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+  gap: 40px;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.search-form__textfield {
+
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+}
+.search-form__checkbox {
+}
+.search-form__pseudo-checkbox {
+}
+.button {
+}
+.search-form__submit-button {
+}
+.content__details {
+}
+.title {
+}
+.content__accent {
+}
+.content__list {
+}
+.preloader-template {
+}
+.preloader {
+}
+.preloader-chasing-squares {
+}
+.square {
+}
+.cards-list-item-template {
+}
+.content__list-item {
+}
+.content__card-link {
+}
+.content__video-card {
+}
+.content__video-card-description-container {
+}
+.content__video-card-title {
+}
+.content__video-card-description {
+}
+.content__video-card-thumbnail {
+}
+.more-button-template {
+}
+.more-button {
+}
+.error-template {
+}
+.error {
+}
+.error__title {
+}
+
+.result {
+  block-size: 100%;
+}
+
+.content__details {
+  block-size: 100%;
+  overflow:auto;
 }

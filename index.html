@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Посмотри в окно</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
@@ -25,7 +25,7 @@
                 type="text"
                 placeholder="Санкт Петербург, например"
                 name="city"
-                class="search-form__textfield hide-focus"
+                class="search-form__textfield"
               />
             </label>
           </fieldset>
@@ -37,7 +37,7 @@
                   type="checkbox"
                   name="time"
                   value="morning"
-                  class="search-form__checkbox visually-hidden hide-focus"
+                  class="search-form__checkbox visually-hidden"
                 />
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">Утро</span>
@@ -47,7 +47,7 @@
                   type="checkbox"
                   name="time"
                   value="afternoon"
-                  class="search-form__checkbox visually-hidden hide-focus"
+                  class="search-form__checkbox visually-hidden"
                 />
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">День</span>
@@ -57,14 +57,14 @@
                   type="checkbox"
                   name="time"
                   value="night"
-                  class="search-form__checkbox visually-hidden hide-focus"
+                  class="search-form__checkbox visually-hidden"
                 />
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">Ночь</span>
               </label>
             </div>
           </fieldset>
-          <button type="submit" class="button search-form__submit-button hide-focus">
+          <button type="submit" class="button search-form__submit-button">
             Найти
           </button>
         </form>
@@ -73,7 +73,7 @@
         <h1 class="content__title title">
           <span class="content__accent">По-</span><br />смотри<br />в окно
         </h1>
-        <ul class="content__list hide-scrollbar hide-focus">
+        <ul class="content__list hide-scrollbar">
           <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
         </ul>
       </section>
@@ -93,8 +93,8 @@
     </template>
 
     <template class="cards-list-item-template">
-      <li class="content__list-item hide-focus">
-        <a href="#0" class="content__card-link hide-focus">
+      <li class="content__list-item">
+        <a href="#0" class="content__card-link">
           <article class="content__video-card">
             <div class="content__video-card-description-container">
               <h2 class="content__video-card-title title"></h2>
